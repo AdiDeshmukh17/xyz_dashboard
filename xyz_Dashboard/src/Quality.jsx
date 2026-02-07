@@ -6,7 +6,7 @@ export default function Quality() {
         src="https://public.tableau.com/views/QUALITYDASHBOARD/Dashboard2?:embed=y&:showVizHome=no"
         style={{
           width: "100%",
-          height: "800%",
+          height: "100%",
           border: "none"
         }}
         allowFullScreen

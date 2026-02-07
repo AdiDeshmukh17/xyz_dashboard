@@ -1,9 +1,10 @@
 /* ===== XYZ Corporate Dashboard Theme ===== */
+
 :root {
   --primary: #18837E;
   --accent: #DB3069;
-  --secondary: #004975;
-  --card: #9882AC;
+  --secondary: #9882AC;
+  --card: #004975;
   --bg: #F2F2F2;
   --text-dark: #222;
   --white: #ffffff;
@@ -21,8 +22,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
   color: var(--text-dark);
-  height: 100vh;
-  overflow: hidden;
 }
 
 /* ===== Main Layout ===== */
@@ -37,23 +36,10 @@ body {
   background-color: var(--secondary);
   color: var(--white);
   padding: 20px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
 }
 
-.sidebar-logo {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.sidebar-logo-img {
-  width: 80px;
-  margin-bottom: 10px;
-}
-
-.sidebar-logo h2 {
-  font-size: 18px;
+.sidebar h2 {
+  margin-bottom: 20px;
 }
 
 .sidebar a {
@@ -68,14 +54,27 @@ body {
 
 .sidebar a:hover {
   background-color: var(--primary);
+  color: var(--white);
+}
+/* ===== Sidebar Logo ===== */
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-/* ===== Main Content ===== */
-.main {
+.sidebar-logo-img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.sidebar-logo h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* ===== Main Content Area ===== */
+.container {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
   padding: 20px;
 }
 
@@ -88,26 +87,14 @@ body {
   font-weight: bold;
   border-radius: 8px;
   margin-bottom: 20px;
-  flex-shrink: 0;
 }
 
 /* ===== Dashboard Container ===== */
 .dashboard-container {
-  flex: 1; /* fills remaining vertical space */
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  padding: 10px;
 }
 
-/* ===== Tableau iframe ===== */
-.tableau-frame {
-  flex: 1; /* iframe fills container */
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
-}
-
-/* ===== Cards & KPI Boxes ===== */
+/* ===== Cards ===== */
 .card {
   background-color: var(--white);
   border-left: 6px solid var(--primary);
@@ -122,6 +109,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* ===== KPI Boxes ===== */
 .kpi {
   background-color: var(--card);
   color: var(--white);
@@ -146,22 +134,19 @@ button:hover {
   background-color: var(--accent);
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    flex-direction: row;
-    overflow-x: auto;
-    padding: 10px;
-  }
-  .sidebar a {
-    margin-right: 10px;
-    margin-bottom: 0;
-  }
-  .main {
-    padding: 10px;
-  }
+/* ===== Tableau iframe ===== */
+.tableau-frame {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-container {
+  height: 100%;
 }

@@ -7,7 +7,7 @@ export default function Sidebar() {
       {/* Logo Section */}
       <div className="sidebar-logo">
         <img
-          src="./xyz_Logo.png"
+          src="/xyz_Logo.png"
           alt="XYZ Logo"
           className="sidebar-logo-img"
         />
