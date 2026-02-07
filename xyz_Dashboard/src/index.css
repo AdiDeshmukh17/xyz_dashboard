@@ -1,0 +1,144 @@
+/* ===== XYZ Corporate Dashboard Theme ===== */
+
+:root {
+  --primary: #18837E;
+  --accent: #DB3069;
+  --secondary: #004975;
+  --card: #9882AC;
+  --bg: #F2F2F2;
+  --text-dark: #222;
+  --white: #ffffff;
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+}
+
+/* ===== Main Layout ===== */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 240px;
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+/* ===== Sidebar Logo ===== */
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sidebar-logo-img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.sidebar-logo h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* ===== Main Content Area ===== */
+.container {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ===== Header ===== */
+.header {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* ===== Dashboard Container ===== */
+.dashboard-container {
+  padding: 10px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: var(--white);
+  border-left: 6px solid var(--primary);
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+/* ===== KPI Boxes ===== */
+.kpi {
+  background-color: var(--card);
+  color: var(--white);
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--accent);
+}
+
+/* ===== Tableau iframe ===== */
+.tableau-frame {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
