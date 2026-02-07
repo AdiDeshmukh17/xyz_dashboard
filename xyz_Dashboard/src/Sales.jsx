@@ -6,7 +6,7 @@ export default function Sales() {
         src="https://public.tableau.com/views/SalesDashbord_17704438883150/Dashboard1?:embed=y&:showVizHome=no"
         style={{
           width: "100%",
-          height: "100%",
+          height: "800%",
           border: "none"
         }}
         allowFullScreen
